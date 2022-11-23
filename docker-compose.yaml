@@ -9,6 +9,7 @@ services:
     environment:
       - SONAR_FORCEAUTHENTICATION=false
   jenkins:
+    image: jenkins/jenkins:2.249.2-jdk11
     build:
       context: .
     ports:
